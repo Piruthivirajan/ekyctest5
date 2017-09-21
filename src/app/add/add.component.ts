@@ -25,6 +25,7 @@ export class AddComponent{
     }
     submitForm(){      
       debugger;
+      console.log(this.model.name+ this.model.email + this.model.address+this.model.contact);
       this.addressService.addAdress(this.model) .subscribe(res =>{        
      console.log(""+res);
         }); 
