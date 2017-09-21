@@ -5,28 +5,28 @@
   <div class="form-group has-success has-feedback">
         <label class="col-sm-4 control-label" for="inputSuccess">Name</label>
     <div class="col-sm-4">
-      <input class="form-control" [(ngModel)]="model.name" id="focusedInput" type="text" placeholder="Enter Your Name" required>
+      <input class="form-control" [(ngModel)]="model.name"  [ngModelOptions]="{standalone: true}" id="focusedInput" type="text" placeholder="Enter Your Name" required>
     </div>
   </div>{{model.name}}
   
   <div class="form-group has-success has-feedback">
         <label class="col-sm-4 control-label" for="inputSuccess">Address</label>
     <div class="col-sm-4">
-      <input class="form-control" [(ngModel)]="model.address" id="focusedInput" type="text" placeholder="Enter Your Address" required>
+      <input class="form-control" [(ngModel)]="model.address" [ngModelOptions]="{standalone: true}" id="focusedInput" type="text" placeholder="Enter Your Address" required>
     </div>
   </div>
 
    <div class="form-group has-success has-feedback">
         <label class="col-sm-4 control-label" for="inputSuccess">Email</label>
     <div class="col-sm-4">
-      <input class="form-control" [(ngModel)]="model.email" id="focusedInput" type="email" placeholder="Enter Your Email" required>
+      <input class="form-control" [(ngModel)]="model.email" [ngModelOptions]="{standalone: true}" id="focusedInput" type="email" placeholder="Enter Your Email" required>
     </div>
   </div>
 
  <div class="form-group has-success has-feedback">
         <label class="col-sm-4 control-label" for="inputSuccess">Phone No</label>
     <div class="col-sm-4">
-      <input class="form-control" [(ngModel)]="model.contact"  id="focusedInput" type="number" pattern=".{10,}"
+      <input class="form-control" [(ngModel)]="model.contact" [ngModelOptions]="{standalone: true}"  id="focusedInput" type="number" pattern=".{10,}"
       minlength="10" title="10 numbers minimum" placeholder="Enter Your Phone No" required>
     </div>
   </div>
