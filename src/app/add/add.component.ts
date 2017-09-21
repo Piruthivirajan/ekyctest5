@@ -23,13 +23,10 @@ export class AddComponent{
     constructor(private _router: Router,private addressService:AddressService){
       this.router=_router;
     }
-    submitForm(){
-      
+    submitForm(){      
       debugger;
-
-     console.log(this.model.name+','+this.model.address);
-      this.addressService.addAdress(this.model) .subscribe(Address =>{
-        
+      this.addressService.addAdress(this.model) .subscribe(res =>{        
+     console.log(""+res);
         }); 
         this.model=new Address();
       alert("Saved Successfully");
